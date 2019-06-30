@@ -4,7 +4,8 @@ body{
 }
 h1{
     font-size:50px;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 h2{
     font-size: 30px;
@@ -19,14 +20,63 @@ ol{
     padding:20px;
     color:black;
 }
-body#idclasspage{
-    background-color: white;
+#idclasspage{
+    background-color:rgb(40, 226, 211);
 }
-/*hyy 
+
 #main-title{
      color:#fc3;
      background: green;
      padding: 10px;
      margin:20px;
      font-size: 18px;
+}
+.section-header{
+    color:olivedrab;
+    border:solid 10px pink;
+    padding:20px 20px 20px;
+    text-align: center;
+    font-size: 4em;
+
+}
+/* styles for descendant selectors*/
+.primary-box{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    border: solid 10px #333;
+    padding: 20px;
+}
+
+.secondary-box{
+    background-color: #333;
+    color:#ffffff;
+   /* border:solid 10px white;  */
+    padding: 20px;
+}
+.secondary-box p{
+    font-size: 14px;
+    font-style: normal;
+}
+
+.secondary-box p em{
+    color: #fc3fc3;
+}
+
+/*styles for grouping selectors*/
+#MainContainer{
+    width: 960px;
+    margin:0 auto; 
+  /*to make it remain in cemter */
+}
+.primary-box , .secondary-box{
+    margin: 30px 20px;
+}
+.inside-box{
+    border: solid 1px black;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    text-align: center;
+    border-bottom: solid 3px red;
+    padding: 0 0 10px;
 }
